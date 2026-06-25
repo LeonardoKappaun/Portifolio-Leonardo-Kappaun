@@ -1,0 +1,34 @@
+#cabecalho {
+  display: block;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  margin: 0 auto;
+  height: auto;
+}
+
+#logo {
+  width: 50%;
+
+}
+
+#navegacao {
+  width: 80%;
+  float: right;
+}
+
+#navegacao a {
+  text-decoration: none;
+  color: black;
+}
+
+#navegacao ul {
+  list-style-type: none;
+}
+
+#navegacao ul li {
+  display: inline;
+  margin: auto 15px;
+}
