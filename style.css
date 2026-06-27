@@ -1,34 +1,74 @@
+* {
+  background-color: black;
+  color: rgb(142, 200, 238);
+}
+
 #cabecalho {
-  display: block;
+  display: flex;
+  height: 80px;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px dotted rgba(148, 224, 224, 0.416);
 }
 
 .logo {
-  width: 20%;
-  float: left;
-  margin: 0 auto;
-  height: auto;
+  transform: translateX(100%);
 }
 
 #logo {
-  width: 50%;
-
+  width: 200px;
+  height: 75px;
 }
 
 #navegacao {
-  width: 80%;
-  float: right;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #navegacao a {
   text-decoration: none;
-  color: black;
 }
 
-#navegacao ul {
+#navegacao li {
   list-style-type: none;
+  display: inline;
+  border: 2px solid;
+  border-color: rgba(142, 237, 237, 0.408);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+  margin: auto 5px;
 }
 
-#navegacao ul li {
-  display: inline;
-  margin: auto 15px;
+main {
+  padding-top: 85px;
+}
+
+#sobre-mim,
+#formacao,
+#portfolio,
+#contato {
+  scroll-margin-top: 90px;
+  margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+#rodape {
+  border-top: 1px dotted rgba(148, 224, 224, 0.416);
+  bottom: 0;
+  text-align: center;
+  margin-top: 100px;
 }
