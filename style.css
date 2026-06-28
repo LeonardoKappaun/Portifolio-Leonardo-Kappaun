@@ -27,6 +27,83 @@
   height: 75px;
 }
 
+/* Esconde o botão hamburguer em telas grandes */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 999;
+
+}
+
+.hamburguer span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: cyan;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+/* Em telas pequenas, mostra o hamburguer e esconde a nav */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: flex;
+  }
+
+  #navegacao {
+    display: none !important;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 16px 0;
+  }
+
+  #navegacao.aberto {
+    display: block !important;
+  }
+
+  #navegacao ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #navegacao.aberto li {
+    text-align: center;
+  }
+
+  #portfolio {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  #exp p {
+    width: 100% !important;        /* remove a largura fixa */
+    padding: 20px;      /* reduz o padding */
+  }
+
+  #cont-port a {
+    width: 100%;        /* botão ocupa a largura disponível */
+    justify-content: center;
+  }
+
+  #formacao {
+    flex-direction: column;  /* empilha os itens da formação */
+  }
+
+  #formacao li {
+    width: 100%;
+  }
+}
+
 #navegacao {
   display: flex;
   align-items: center;
@@ -196,10 +273,14 @@ p {
   flex-direction: column;
 }
 
-.grupoForm label{
+.grupoForm label {
   text-align: left;
 }
 
+#msg-envio {
+  text-align: center;
+  justify-content: center;
+}
 
 
 

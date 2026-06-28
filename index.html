@@ -16,6 +16,12 @@
 
       <a href="#inicio"><img src="img/logo_cabecalho.png" alt="Logo Leonardo Kappaun" id="logo"></a>
     </div>
+
+    <button class="hamburguer" id="hamburguer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav id="navegacao" class="navegacao">
       <ul>
         <li><a href="#sobre-mim">Sobre mim</a></li>
@@ -76,6 +82,7 @@
     </section>
     <!--Seção com meios de contato-->
     <section id="contato">
+      <p>Fale comigo deixando uma mensagem:</p><br>
       <form id="formulario">
         <div class="grupoForm">
           <label for="campo-nome">Nome</label>
@@ -92,6 +99,11 @@
           <input type="text" name="campo-msg" id="campo-msg" maxlength="1000">
         </div>
       </form>
+      <br>
+      <div id="msg-envio">Mensagem enviada com sucesso!</div><br>
+
+      <button type="button" onclick="enviarFormulario()">Enviar mensagem</button>
+      
     </section>
   </main>
   <!--Seção com o rodapé da página-->
