@@ -1,6 +1,9 @@
 * {
   background-color: black;
   color: rgb(142, 200, 238);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #cabecalho {
@@ -12,10 +15,11 @@
   top: 0;
   width: 100%;
   border-bottom: 1px dotted rgba(148, 224, 224, 0.416);
+  padding: 0 32px;
 }
 
 .logo {
-  transform: translateX(100%);
+  width: 200px;
 }
 
 #logo {
@@ -24,13 +28,18 @@
 }
 
 #navegacao {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
 }
 
 #navegacao a {
   text-decoration: none;
+}
+
+#navegacao ul {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
 }
 
 #navegacao li {
@@ -49,19 +58,147 @@ main {
   padding-top: 85px;
 }
 
+#inicio {
+  scroll-margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+#inicio h1 {
+  /*padding-left: 80px;**/
+  width: 331px;
+  color: rgb(43, 94, 212);
+  font-size: 3rem;
+}
+
+#inicio span {
+  padding-left: 100px;
+  color: rgb(43, 94, 212);
+}
+
+#inicio p {
+  text-align: center;
+  /*padding-left: 100px;*/
+  color: aliceblue;
+  font-size: 1.8rem;
+}
+
 #sobre-mim,
 #formacao,
-#portfolio,
 #contato {
-  scroll-margin-top: 90px;
-  margin-top: 300px;
+  scroll-margin-top: 400px;
+  margin-top: 400px;
+  padding: 0 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sobre-mim {
+  margin-top: 100px;
+
+}
+
+#sobre-mim,
+#portfolio,
+p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#formacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+#formacao li {
+  border: 2px solid;
+  margin: 10px;
+  padding: 15px;
+  list-style-position: inside;
 }
 
 
+#portfolio {
+  scroll-margin-top: 200px;
+  margin-top: 450px;
+  padding: 0 80px;
+}
 
+#cont-port {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
 
+#cont-port a {
+  background-color: rgb(6, 112, 218);
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: aliceblue;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: 350px;
+}
 
+#cont-port a:hover {
+  transition: all 1s;
+}
+
+#cont-port img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+#exp {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#exp p {
+  border: 2px solid transparent;
+  border-image: none;
+
+  background:
+    linear-gradient(to right, transparent, cyan) top / 100% 2px no-repeat,
+    linear-gradient(to left, transparent, cyan) bottom / 100% 2px no-repeat,
+    linear-gradient(to bottom, cyan, transparent) right / 2px 100% no-repeat,
+    linear-gradient(to top, cyan, transparent) left / 2px 100% no-repeat;
+  padding: 30px;
+  width: 1000px;
+  text-align: center;
+
+}
+
+#contato {
+
+  margin-bottom: 400px;
+  font-size: 1.2rem;
+}
+
+.grupoForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grupoForm label{
+  text-align: left;
+}
 
 
 
@@ -71,4 +208,9 @@ main {
   bottom: 0;
   text-align: center;
   margin-top: 100px;
+  padding: 20px;
+}
+
+#rodape p {
+  font-size: 17px;
 }
