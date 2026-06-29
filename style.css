@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Estilização cabeçalho da página*/
 #cabecalho {
   display: flex;
   height: 80px;
@@ -49,12 +50,250 @@
   transition: all 0.3s;
 }
 
+/*Estilização barra de navegação*/
+#navegacao {
+  display: flex;
+  align-items: center;
+}
+
+#navegacao a {
+  text-decoration: none;
+}
+
+#navegacao ul {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+/*botões de links da barra de navegação*/
+#navegacao li {
+  list-style-type: none;
+  display: inline;
+  border: 2px solid;
+  border-color: rgba(142, 237, 237, 0.408);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+  margin: auto 5px;
+}
+
+/*Seção de estilização do conteúdo da página*/
+main {
+  padding-top: 85px;
+}
+
+/*Página de início*/
+* #inicio {
+  scroll-margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  margin-bottom: 10px;
+}
+
+/*Título início*/
+#inicio h1 {
+  width: 331px;
+  color: rgb(43, 94, 212);
+  font-size: 3rem;
+}
+
+/*parte do título com estilo diferente*/
+#inicio span {
+  padding-left: 100px;
+  color: rgb(43, 94, 212);
+}
+
+#inicio p {
+  text-align: center;
+  /*padding-left: 100px;*/
+  color: aliceblue;
+  font-size: 1.8rem;
+}
+
+/*Estilização das seções de conteúdo*/
+#sobre-mim,
+#formacao,
+#contato {
+  scroll-margin-top: 400px;
+  margin-top: 400px;
+  padding: 0 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sobre-mim {
+  margin-top: 110px;
+}
+
+/*Estilização dos parágrafos das seções*/
+#sobre-mim,
+#portfolio,
+p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/*Estilização da seção de formação*/
+#formacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/*Estilização da lista de formações*/
+#formacao li {
+  border: 2px solid;
+  margin: 10px;
+  padding: 15px;
+  list-style-position: inside;
+}
+
+/*Estilização da seção do portfólio*/
+#portfolio {
+  scroll-margin-top: 200px;
+  margin-top: 450px;
+  padding: 0 80px;
+}
+
+/*Seção de conteúdo do portfólio*/
+#cont-port {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+/*botão com link do github*/
+#cont-port a {
+  background-color: rgb(6, 112, 218);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: aliceblue;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: 350px;
+}
+
+#cont-port a:hover {
+  transition: all 1s;
+}
+
+#cont-port img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+/*Seção de experiências*/
+#exp {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*parágrafos da seção de experiência*/
+#exp p {
+  border: 2px solid transparent;
+  border-image: none;
+
+  background:
+    linear-gradient(to right, transparent, cyan) top / 100% 2px no-repeat,
+    linear-gradient(to left, transparent, cyan) bottom / 100% 2px no-repeat,
+    linear-gradient(to bottom, cyan, transparent) right / 2px 100% no-repeat,
+    linear-gradient(to top, cyan, transparent) left / 2px 100% no-repeat;
+  padding: 30px;
+  width: 1000px;
+  text-align: center;
+
+}
+
+/*Seção de contato*/
+#contato {
+  margin-bottom: 290px;
+  font-size: 1.2rem;
+  scroll-margin-top: 100px;
+}
+
+/*Grupo de divs do formulário*/
+.grupoForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.grupoForm label {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/*Caixas de texto do formulário*/
+.grupoForm input,
+.grupoForm textarea {
+  width: 60%;
+  height: 30px;
+  padding: 10px;
+  background-color: #111;
+  border-radius: 8px;
+  color: aliceblue;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(to right, transparent, cyan) bottom / 100% 2px no-repeat;
+}
+
+/*campo de mensagem*/
+#campo-msg {
+  height: 100px;
+}
+
+/*Mensagem quando é enviada a mensagem com sucesso*/
+#msg-envio {
+  text-align: center;
+  justify-content: center;
+}
+
+/*Botão de envio*/
+#botao-enviar {
+  background-color: rgb(6, 112, 218);
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Seção do rodapé*/
+#rodape {
+  border-top: 1px dotted rgba(148, 224, 224, 0.416);
+  bottom: 0;
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+#rodape p {
+  font-size: 17px;
+}
+
 /* Em telas pequenas, mostra o hamburguer e esconde a nav */
 @media (max-width: 768px) {
   .hamburguer {
     display: flex;
   }
 
+  /*barra de navegação em telas pequenas*/
   #navegacao {
     display: none !important;
     position: absolute;
@@ -80,218 +319,37 @@
     text-align: center;
   }
 
+  /*Seção de portfolio em telas pequenas*/
   #portfolio {
     margin-top: 0;
     padding: 0 20px;
   }
 
+  /*Divisão de experiências em telas pequenas*/
   #exp p {
-    width: 100% !important;        /* remove a largura fixa */
-    padding: 20px;      /* reduz o padding */
+    width: 100% !important;
+    padding: 20px;
   }
 
+  /*Divisão de conteúdo do portifólio*/
   #cont-port a {
-    width: 100%;        /* botão ocupa a largura disponível */
     justify-content: center;
   }
 
+  /*Seção de formação**/
   #formacao {
-    flex-direction: column;  /* empilha os itens da formação */
+    flex-direction: column;
   }
 
+  /*lista de formações*/
   #formacao li {
     width: 100%;
   }
-}
 
-#navegacao {
-  display: flex;
-  align-items: center;
-}
+  /*grupos de caixas de texto do formulário*/
+  .grupoForm input,
+  .grupoForm textarea {
+    width: 100%;
+  }
 
-#navegacao a {
-  text-decoration: none;
-}
-
-#navegacao ul {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0;
-}
-
-#navegacao li {
-  list-style-type: none;
-  display: inline;
-  border: 2px solid;
-  border-color: rgba(142, 237, 237, 0.408);
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  width: 120px;
-  margin: auto 5px;
-}
-
-main {
-  padding-top: 85px;
-}
-
-#inicio {
-  scroll-margin-top: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 80vh;
-}
-
-#inicio h1 {
-  /*padding-left: 80px;**/
-  width: 331px;
-  color: rgb(43, 94, 212);
-  font-size: 3rem;
-}
-
-#inicio span {
-  padding-left: 100px;
-  color: rgb(43, 94, 212);
-}
-
-#inicio p {
-  text-align: center;
-  /*padding-left: 100px;*/
-  color: aliceblue;
-  font-size: 1.8rem;
-}
-
-#sobre-mim,
-#formacao,
-#contato {
-  scroll-margin-top: 400px;
-  margin-top: 400px;
-  padding: 0 80px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#sobre-mim {
-  margin-top: 100px;
-
-}
-
-#sobre-mim,
-#portfolio,
-p {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-#formacao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-#formacao li {
-  border: 2px solid;
-  margin: 10px;
-  padding: 15px;
-  list-style-position: inside;
-}
-
-
-#portfolio {
-  scroll-margin-top: 200px;
-  margin-top: 450px;
-  padding: 0 80px;
-}
-
-#cont-port {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 16px;
-}
-
-#cont-port a {
-  background-color: rgb(6, 112, 218);
-  border-radius: 10%;
-  text-decoration: none;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-size: 20px;
-  color: aliceblue;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  width: 350px;
-}
-
-#cont-port a:hover {
-  transition: all 1s;
-}
-
-#cont-port img {
-  width: 15%;
-  border-radius: 50%;
-}
-
-#exp {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#exp p {
-  border: 2px solid transparent;
-  border-image: none;
-
-  background:
-    linear-gradient(to right, transparent, cyan) top / 100% 2px no-repeat,
-    linear-gradient(to left, transparent, cyan) bottom / 100% 2px no-repeat,
-    linear-gradient(to bottom, cyan, transparent) right / 2px 100% no-repeat,
-    linear-gradient(to top, cyan, transparent) left / 2px 100% no-repeat;
-  padding: 30px;
-  width: 1000px;
-  text-align: center;
-
-}
-
-#contato {
-
-  margin-bottom: 400px;
-  font-size: 1.2rem;
-}
-
-.grupoForm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.grupoForm label {
-  text-align: left;
-}
-
-#msg-envio {
-  text-align: center;
-  justify-content: center;
-}
-
-
-
-#rodape {
-  border-top: 1px dotted rgba(148, 224, 224, 0.416);
-  bottom: 0;
-  text-align: center;
-  margin-top: 100px;
-  padding: 20px;
-}
-
-#rodape p {
-  font-size: 17px;
 }

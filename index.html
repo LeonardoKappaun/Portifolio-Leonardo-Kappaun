@@ -17,11 +17,14 @@
       <a href="#inicio"><img src="img/logo_cabecalho.png" alt="Logo Leonardo Kappaun" id="logo"></a>
     </div>
 
+    <!--Botão hamburguer para quando estiver em uma tela menor-->
     <button class="hamburguer" id="hamburguer">
       <span></span>
       <span></span>
       <span></span>
     </button>
+
+    <!--Barra de navegação-->
     <nav id="navegacao" class="navegacao">
       <ul>
         <li><a href="#sobre-mim">Sobre mim</a></li>
@@ -32,13 +35,16 @@
     </nav>
     <div style="width: 200px;"></div>
   </header>
+
   <!--Seção do conteúdo da página-->
   <main class="conteudo">
 
+    <!--Seção de início da página-->
     <section id="inicio">
       <h1 id="nome">Leonardo<br> <span>Kappaun</span></h1><br><br>
       <p>Estudante de Análise e desenvolvimento da Uninter</p>
     </section>
+
     <!--Seção de informações sobre mim-->
     <section id="sobre-mim">
       <p>Olá! Meu nome é Leonardo Felipe Kappaun Firmino, tenho 24 anos, moro em Pompéu-MG. Sou estudante do curso de
@@ -48,6 +54,7 @@
       <p>Além disso gosto de me aventurar com montagem e testes de hardware, automações, entre outras coisas de
         tecnologia. Nas horas vagas, também gosto de jogar, praticar algum esporte, malhar e também sou músico.</p>
     </section>
+
     <!--Seção de informações de formação-->
     <section id="formacao">
       <ul id="cursos">
@@ -60,7 +67,8 @@
         <li>SQLite online conhecendo instruções SQL - Alura</li>
       </ul>
     </section>
-    <!--Seção com meu portifólio-->
+    
+    <!--Seção com meu portifólio e experiência-->
     <section id="portfolio">
       <div id="cont-port">
         <h2>Portfólio</h2><br>
@@ -80,33 +88,39 @@
 
       </div>
     </section>
-    <!--Seção com meios de contato-->
+
+    <!--Seção de contato e formulário de mensagem-->
     <section id="contato">
       <p>Fale comigo deixando uma mensagem:</p><br>
       <form id="formulario">
+
+        <!--Caixa de texto do nome-->
         <div class="grupoForm">
           <label for="campo-nome">Nome</label>
           <input type="text" name="campo-nome" id="campo-nome" placeholder="Digite seu nome">
         </div>
 
+        <!--Caixa de texto do email-->
         <div class="grupoForm">
           <label for="campo-email">E-mail</label>
           <input type="text" name="campo-email" id="campo-email" placeholder="Digite seu e-mail">
         </div>
 
+        <!--Caixa de texto da mensagem-->
         <div class="grupoForm">
           <label for="campo-mensagem">Deixe uma mensagem:</label>
-          <input type="text" name="campo-msg" id="campo-msg" maxlength="1000">
+          <textarea name="campo-msg" id="campo-msg" maxlength="1000"></textarea>
         </div>
       </form>
       <br>
       <div id="msg-envio">Mensagem enviada com sucesso!</div><br>
 
-      <button type="button" onclick="enviarFormulario()">Enviar mensagem</button>
+      <button id="botao-enviar" type="button" onclick="enviarFormulario()">Enviar mensagem</button>
       
     </section>
   </main>
-  <!--Seção com o rodapé da página-->
+
+  <!--Rodapé da página-->
   <footer id="rodape">
     <p>Desenvolvido por Leonardo Kappaun. Todos os direitos reservados.</p>
   </footer>
