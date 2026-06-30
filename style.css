@@ -244,17 +244,20 @@ p {
   width: 60%;
   height: 30px;
   padding: 10px;
-  background-color: #111;
   border-radius: 8px;
   color: aliceblue;
-  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background:
     linear-gradient(to right, transparent, cyan) bottom / 100% 2px no-repeat;
 }
 
+#campo-email, #campo-nome {
+  background-color: #141414;
+}
 /*campo de mensagem*/
 #campo-msg {
   height: 100px;
+  background-color: #141414;
 }
 
 /*Mensagem quando é enviada a mensagem com sucesso*/
